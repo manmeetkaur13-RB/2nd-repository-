@@ -72,6 +72,55 @@ body {
 
 .nav-links a:hover { color: var(--light); }
 
+/* HAMBURGER ICON STYLES */
+.hamburger {
+    display: none; /* Hidden on Desktop */
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    z-index: 1001;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+/* MOBILE RESPONSIVE STYLES */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex; /* Shows icon on Mobile */
+    }
+
+    .nav-links {
+        position: fixed;
+        right: -100%; /* Hidden off-screen by default */
+        top: 0;
+        height: 100vh;
+        width: 70%;
+        background: rgba(15, 16, 26, 0.95); /* Matches your dark AI theme */
+        backdrop-filter: blur(10px);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: 0.5s ease;
+        box-shadow: -10px 0 30px rgba(0,0,0,0.5);
+    }
+
+    /* This class will be added by JavaScript when clicked */
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+}
+
+
 /* HERO SECTION */
 .hero {
     padding: 100px 5%;
