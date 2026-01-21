@@ -347,3 +347,62 @@ nav ul li a:hover {
 .role-card:hover {
     transform: translateY(-5px);
 }
+/* Update your navbar container */
+header {
+    display: flex;
+    justify-content: space-between; /* Pushes logo and links to opposite ends */
+    align-items: center;
+    padding: 1rem 5%; /* Adds breathing room inside the bar */
+    background: #1a1c2e; /* Modern dark background */
+}
+
+/* Add space between your navigation links */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px; /* This creates the space between Home, Features, etc. */
+}
+
+/* Colorful, modern button style */
+.btn-primary {
+    background: linear-gradient(to right, #6346f1, #9333ea);
+    color: white;
+    padding: 10px 25px;
+    border-radius: 30px; /* Rounded corners look more modern */
+    font-weight: bold;
+    transition: transform 0.3s ease; /* Smooth movement */
+}
+
+.btn-primary:hover {
+    transform: scale(1.05); /* Slight pop-out effect on hover */
+    box-shadow: 0 4px 15px rgba(99, 70, 241, 0.4);
+}
+
+
+/* Animated link effect */
+nav ul li a {
+    text-decoration: none;
+    color: #e0e0e0;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+}
+
+/* Subtle underline that appears on hover */
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #6346f1;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
