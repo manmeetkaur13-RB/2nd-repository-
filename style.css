@@ -1,11 +1,10 @@
 /* GLOBAL STYLES */
 :root {
-    --primary: #6366f1;
-    --secondary: #a855f7;
-    --dark: #0f172a;
-    --light: #f8fafc;
-    --text-muted: #94a3b8;
-    --gradient: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+    --primary-color: #4f46e5;  /* ADD THIS LINE */
+    --accent-color: #f59e0b;
+    --bg-light: #f9fafb;
+    --text-dark: #1f2937;
+    --card-bg: #ffffff;
 }
 
 * {
@@ -45,7 +44,10 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
+
 
 .logo {
     font-size: 1.5rem;
@@ -72,47 +74,40 @@ body {
 
 /* HERO SECTION */
 .hero {
-    padding: 100px 0;
-    min-height: 90vh;
-    display: flex;
-    align-items: center;
+    padding: 100px 5%;
+    background: linear-gradient(135deg, #f9fafb 0%, #ffffff 100%);
 }
 
 .hero-grid {
     display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
-    gap: 4rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
     align-items: center;
 }
 
-.badge {
-    background: rgba(99, 102, 241, 0.1);
-    color: var(--primary);
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    border: 1px solid rgba(99, 102, 241, 0.2);
+h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
 }
 
-.hero-content h1 {
-    font-size: clamp(2.5rem, 5vw, 4rem);
-    line-height: 1.1;
-    margin: 1.5rem 0;
+.hero-btns {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
 }
 
-.text-gradient {
-    background: var(--gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.btn-secondary {
+    background: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
-.hero-content p {
-    color: var(--text-muted);
-    font-size: 1.1rem;
-    margin-bottom: 2.5rem;
-    max-width: 500px;
-}
+
 
 :root {
     --primary-color: #4f46e5; /* Eye-catching Indigo */
