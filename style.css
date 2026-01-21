@@ -250,27 +250,42 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 5%;
-    background-color: #33364a; 
-    position: sticky; 
+    background-color: #1a1c2e; /* A solid dark color for the bar */
+    position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 30px; /* Increased gap for better readability */
-    align-items: center;
+/* 1. Make the Logo "SATIC" stand out */
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff; /* Pure white for high contrast */
 }
 
+/* 2. Make the Links "Home", "Features", etc. brighter */
 nav ul li a {
     text-decoration: none;
-    color: #a0a0a0; 
+    color: #e0e0e0; /* Off-white/light grey for better visibility */
+    font-weight: 500;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: white;
+    color: #ffffff; /* Glows white on hover */
+}
+
+/* 3. Fix the "Get Started" button text color */
+.btn-primary {
+    background-color: #6346f1; 
+    color: #ffffff !important; /* Forces text to be white instead of blue */
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    white-space: nowrap;
+    display: inline-block;
 }
 
 
