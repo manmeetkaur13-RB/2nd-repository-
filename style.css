@@ -636,4 +636,37 @@ nav ul li a, .nav-links a {
   background: linear-gradient(45deg, #FFB800, #FF8A00);
   box-shadow: 0 0 10px rgba(255, 184, 0, 0.5);
 }
+/* FORCE text visibility inside cards */
+.feature-card,
+.feature-card * {
+  color: #E6E8FF !important;
+  opacity: 1 !important;
+}
 
+/* Card headings */
+.feature-card h3 {
+  color: #FFFFFF !important;
+  font-weight: 600;
+}
+
+/* Card paragraph text */
+.feature-card p {
+  color: #C7CBFF !important;
+  line-height: 1.6;
+}
+
+/* Section main heading */
+.section-title,
+.section-title h2 {
+  color: #FFFFFF !important;
+}
+
+/* Navbar menu text */
+nav a {
+  color: #FFFFFF !important;
+}
+
+/* Mobile menu background fix (optional) */
+.mobile-menu {
+  background: rgba(10, 10, 30, 0.95);
+}
