@@ -19,13 +19,13 @@ p {
 /* Card text */
 .card,
 .feature-card {
-  color: #B8BCE6;
+  color: #B0B0B0;
 }
 
 /* Card titles */
 .card h3,
 .feature-card h3 {
-  color: #E6E8FF;
+  color: #B0B0B0;
 }
 
 /* Subtle / muted text */
