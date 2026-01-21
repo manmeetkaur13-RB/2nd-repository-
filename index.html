@@ -128,8 +128,17 @@
 </body>
 </html>
 
-        
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
 
-    <script src="script.js"></script>
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    
+    // Animation for the hamburger icon (optional)
+    hamburger.classList.toggle('toggle');
+  });
+</script>
+
 </body>
 </html>
