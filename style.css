@@ -313,6 +313,41 @@ header {
     text-decoration: none;
 }
 
+/* Apply to the whole body for a consistent look */
+body {
+    color: #1A1B27; /* Dark Midnight Blue */
+    font-family: 'Inter', sans-serif; /* Recommended for a modern look */
+}
+
+/* Make Headings stand out with a slightly different dark tone */
+h1, h2, h3 {
+    color: #0F172A; /* Even darker Navy for strong contrast */
+    letter-spacing: -0.02em;
+}
+
+/* For the specific sections like 'Explore Career Roles' */
+.role-card h3 {
+    color: #1E293B;
+}
+
+/* Unique Dark Button Hover Effect */
+.explore-btn {
+    background-color: #1A1B27;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.explore-btn:hover {
+    background-color: #334155; /* Lighter slate on hover */
+    transform: translateY(-2px);
+}
+
+/* Secondary text (descriptions) should be slightly lighter but still dark */
+p {
+    color: #475569; 
+    line-height: 1.6;
+}
+
 /* Fix the Nav Links visibility and spacing */
 nav ul {
     display: flex;
