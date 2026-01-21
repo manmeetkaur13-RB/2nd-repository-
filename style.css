@@ -247,33 +247,57 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Pushes Logo to left, Nav to right */
     align-items: center;
     padding: 1rem 5%;
-    background-color: #1a1c2e; /* A solid dark color for the bar */
+    background-color: #1a1c2e; /* Solid dark background */
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-/* 1. Make the Logo "SATIC" stand out */
+/* Fix the Logo visibility */
 .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #ffffff; /* Pure white for high contrast */
+    font-size: 1.6rem;
+    font-weight: 800; /* Extra bold */
+    color: #ffffff !important; /* Pure white */
+    text-decoration: none;
 }
 
-/* 2. Make the Links "Home", "Features", etc. brighter */
+/* Fix the Nav Links visibility and spacing */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px; /* Adds space between Home, Features, etc. */
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
 nav ul li a {
     text-decoration: none;
-    color: #e0e0e0; /* Off-white/light grey for better visibility */
-    font-weight: 500;
-    transition: color 0.3s ease;
+    color: #ffffff !important; /* Makes text pure white */
+    font-weight: 600; /* Makes text thicker */
+    font-size: 1rem;
+    transition: opacity 0.3s;
 }
 
 nav ul li a:hover {
-    color: #ffffff; /* Glows white on hover */
+    opacity: 0.7; /* Slight fade when you hover */
 }
+
+/* Fix the Button "Get Started" formatting */
+.btn-primary {
+    background-color: #6346f1; 
+    color: white !important;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    white-space: nowrap; /* Prevents "Starte" cut-off */
+    border: none;
+}
+
 
 /* 3. Fix the "Get Started" button text color */
 .btn-primary {
