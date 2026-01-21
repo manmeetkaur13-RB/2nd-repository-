@@ -700,3 +700,49 @@ nav a {
 .feature-card p {
   color: #C8CCFF !important;
 }
+/* ===== Why Real Experience section text fix ===== */
+
+.why-experience,
+.why-experience * {
+  opacity: 1 !important;
+}
+
+/* Section heading */
+.why-experience h2 {
+  color: #FFFFFF !important;
+  font-weight: 600;
+}
+
+/* Section paragraph */
+.why-experience p {
+  color: #C9CCFF !important;
+  line-height: 1.6;
+}
+
+/* Cards inside dark section */
+.why-experience .card,
+.why-experience .feature-card {
+  position: relative;
+}
+
+/* Reduce dark overlay */
+.why-experience .card::before,
+.why-experience .feature-card::before {
+  opacity: 0.3 !important;
+}
+
+/* Bring text above overlay */
+.why-experience .card h3,
+.why-experience .card p,
+.why-experience .feature-card h3,
+.why-experience .feature-card p {
+  position: relative;
+  z-index: 2;
+  color: #EDEEFF !important;
+}
+
+/* Number circle text stays strong */
+.why-experience .number,
+.why-experience span {
+  color: #FFC44D !important;
+}
