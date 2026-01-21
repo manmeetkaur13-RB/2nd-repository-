@@ -670,3 +670,33 @@ nav a {
 .mobile-menu {
   background: rgba(10, 10, 30, 0.95);
 }
+/* Fix overlay covering text */
+.feature-card {
+  position: relative;
+}
+
+.feature-card::before {
+  opacity: 0.35 !important;   /* reduce darkness */
+}
+
+/* Bring text above overlay */
+.feature-card h3,
+.feature-card p,
+.feature-card span,
+.feature-card div {
+  position: relative;
+  z-index: 2;
+  color: #EAEAFF !important;
+  opacity: 1 !important;
+}
+
+/* Headings stronger */
+.feature-card h3 {
+  color: #FFFFFF !important;
+  font-weight: 600;
+}
+
+/* Paragraph softer */
+.feature-card p {
+  color: #C8CCFF !important;
+}
