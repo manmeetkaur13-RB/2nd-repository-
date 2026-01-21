@@ -219,7 +219,7 @@ body {
 .text-gradient {
     background: linear-gradient(to right, #4f46e5, #9333ea);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: white;
 }
 
 /* Final CTA Section */
