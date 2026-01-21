@@ -162,3 +162,16 @@ body {
     .nav-links, .navbar .btn-primary { display: none; }
     .hero-content p { margin: 0 auto 2rem; }
 }
+
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 15px 40px rgba(118, 75, 162, 0.2);
+    border-top: 5px solid #764ba2;
+}
