@@ -746,3 +746,11 @@ nav a {
 .why-experience span {
   color: #FFC44D !important;
 }
+/* Force text color in dark section */
+section h2 {
+  color: #ffffff !important;
+}
+
+section p {
+  color: #c9ccff !important;
+}
