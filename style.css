@@ -551,3 +551,29 @@ nav ul li a:hover {
     transform: translateY(-5px) scale(1.05);
     box-shadow: 0 15px 30px rgba(99, 70, 241, 0.5);
 }
+/* Main Headings (Big Titles) */
+h1, h2, .hero-content h1 {
+    color: #0F172A !important; /* A deep, prestigious Navy-Black */
+}
+
+/* Sub-headings (Role titles like AI Data Analyst) */
+h3, h4 {
+    color: #1E293B !important; /* Dark Slate Grey */
+}
+
+/* Body Text (The descriptions and paragraphs) */
+p, li, span {
+    color: #334155 !important; /* Polished Deep Steel */
+}
+
+/* Links and Navigation Menu */
+nav ul li a, .nav-links a {
+    color: #1E293B !important;
+    font-weight: 600;
+}
+
+/* Accent Color for small text or numbers */
+.stat-number, .highlight-text {
+    color: #111827 !important; /* Pure Dark Ink */
+}
+
