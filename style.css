@@ -1,3 +1,46 @@
+/* Global text colors */
+body {
+  color: #B8BCE6;
+  background-color: #0B0D1A;
+}
+
+/* Section headings */
+h1, h2, h3, h4, h5 {
+  color: #E6E8FF;
+  font-weight: 600;
+}
+
+/* Paragraph text */
+p {
+  color: #B8BCE6;
+  line-height: 1.6;
+}
+
+/* Card text */
+.card,
+.feature-card {
+  color: #B8BCE6;
+}
+
+/* Card titles */
+.card h3,
+.feature-card h3 {
+  color: #E6E8FF;
+}
+
+/* Subtle / muted text */
+.text-muted {
+  color: #8F94C9;
+}
+
+/* Navigation menu (mobile + desktop) */
+nav a {
+  color: #E6E8FF;
+}
+
+nav a:hover {
+  color: #9A7DFF;
+}
 /* GLOBAL STYLES */
 :root {
     --primary-color: #4f46e5;  /* ADD THIS LINE */
