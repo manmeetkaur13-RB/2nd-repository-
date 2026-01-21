@@ -243,21 +243,49 @@ body {
     color: #6b7280;
 }
 
+
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 5%;
-    background: #fff;
-    position: relative;
-    z-index: 100;
+    background-color: #33364a; 
+    position: sticky; 
+    top: 0;
+    z-index: 1000;
 }
 
 nav ul {
     display: flex;
     list-style: none;
-    gap: 20px;
+    gap: 30px; /* Increased gap for better readability */
+    align-items: center;
 }
+
+nav ul li a {
+    text-decoration: none;
+    color: #a0a0a0; 
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+
+.btn-primary {
+    background-color: #6346f1; /* Your specific purple */
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    white-space: nowrap; 
+    display: inline-block;
+}
+
 /* Styling for the new role images */
 .role-img {
     width: 100%;
