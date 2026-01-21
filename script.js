@@ -1,5 +1,5 @@
 // 1. Sticky Header Effect
-const header = document.querySelector("#header");
+const header = document.querySelector(".navbar");
 
 window.addEventListener("scroll", () => {
     if (window.scrollY > 50) {
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // 3. Dynamic Statistics Counter
-    [span_1](start_span)// Animates the "12.6%" statistic mentioned in the reference PDF[span_1](end_span)
+    // Animates the "12.6%" statistic mentioned in the reference PDF[span_1](end_span)
     const statsSection = document.querySelector('.info-highlight');
     if (statsSection) {
         const statsObserver = new IntersectionObserver((entries) => {
