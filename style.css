@@ -577,3 +577,20 @@ nav ul li a, .nav-links a {
     color: #111827 !important; /* Pure Dark Ink */
 }
 
+.card-heading {
+  color: #FFFFFF; /* Bright white for clarity */
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.card-description {
+  color: #BDBDBD; /* Light gray for readability */
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.number-icon {
+  background: linear-gradient(45deg, #FFB800, #FF8A00);
+  box-shadow: 0 0 10px rgba(255, 184, 0, 0.5);
+}
+
