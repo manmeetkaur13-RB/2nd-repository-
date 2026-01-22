@@ -3,122 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SATIC AI | Premium Internships</title>
+    <title>SATIC AI | Premium Career Internships</title>
+    
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div class="background-glow"></div>
+    <div class="bg-gradient-overlay"></div>
 
     <nav class="navbar">
-        <div class="container">
-            <div class="logo">SATICAI</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#job-roles">Job Roles</a></li>
-                <li><a href="#why-satic">Why Satic</a></li>
-                <li><a href="#apply-now">Apply Now</a></li>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#home">SATIC<span class="logo-accent">AI</span></a>
+            </div>
+            
+            <ul class="nav-links" id="navMenu">
+                <li><a href="#home" class="nav-item">Home</a></li>
+                <li><a href="#roles" class="nav-item">Job Roles</a></li>
+                <li><a href="#benefits" class="nav-item">Why Us</a></li>
+                <li><a href="#contact" class="nav-item apply-btn">Apply Now</a></li>
             </ul>
+
+            <button class="menu-toggle" id="mobileMenu" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
         </div>
     </nav>
 
-    <header>
-        <h1>Experience Real, AI-Powered Job Roles</h1>
-    </header>
-
-</body>
-</html>
-
-
-    <main class="main-safe-zone">
-        <header class="hero" id="home">
-            <div class="reveal">
-                <span class="badge">BBA / BCA Internships 2026</span>
-                <h1 class="main-title">Experience Real,<br><span class="accent">AI-Powered</span> Job Roles</h1>
-                <p class="hero-subtext">Build proof through work in evolving fields where knowledge alone is no longer enough.Real experience matters more than ever.</p>
-                <div class="hero-btns">
-                    <a href="#roles" class="btn-primary">Explore Roles</a>
-                    <a href="#why" class="btn-secondary">Learn Why</a>
+    <main class="content-wrapper">
+        
+        <header class="hero-section" id="home">
+            <div class="hero-content">
+                <span class="status-badge">Next Intake: Summer 2026</span>
+                <h1 class="hero-title">
+                    Master the <span class="text-gradient">AI-Driven</span><br>Modern Workplace
+                </h1>
+                <p class="hero-description">
+                    Move beyond theory. Build a portfolio that proves you can thrive in AI-integrated industries through hands-on practical roles.
+                </p>
+                <div class="cta-group">
+                    <a href="#roles" class="btn btn-filled">Explore Roles</a>
+                    <a href="#benefits" class="btn btn-outline">Learn Benefits</a>
                 </div>
             </div>
         </header>
 
-        <section class="section" id="roles">
-            <h2 class="section-label reveal">Practical Job Roles</h2>
-            <div class="role-grid">
-                <div class="glass-card reveal">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAra-SrzmUr9ZFhp6VX-9pwxWTYWb6Dd19UQ&s" alt="Data Analyst" class="card-img">
-                    <h3>AI Data Analyst</h3>
-                    <p>Work with real datasets and reports, using AI to support analysis and insight generation.</p>
-                    <div class="card-footer"><button class="btn-text">More Info</button></div>
-                </div>
+        <section class="roles-section" id="roles">
+            <div class="section-header">
+                <h2 class="section-title">Practical Career Tracks</h2>
+                <p class="section-subtitle">Specialize in roles shaped by the future of automation.</p>
+            </div>
 
-                <div class="glass-card reveal">
-                    <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=600" alt="Designer" class="card-img">
-                    <h3>AI Graphic Designer</h3>
-                    <p>Create real visual assets and designs while learning how AI supports creative execution.</p>
-                    <div class="card-footer"><button class="btn-text">More Info</button></div>
-                </div>
+            <div class="grid-layout">
+                <article class="feature-card">
+                    <div class="card-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1551288049-bbda48338715?q=80&w=600" alt="Data Analysis">
+                    </div>
+                    <div class="card-body">
+                        <h3>AI Data Architect</h3>
+                        <p>Learn to leverage large language models for predictive analytics and data storytelling.</p>
+                        <a href="#" class="read-more">View Details →</a>
+                    </div>
+                </article>
 
-                <div class="glass-card reveal">
-                    <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=600" alt="Developer" class="card-img">
-                    <h3>AI Frontend Developer</h3>
-                    <p>Build real user interfaces and components while using AI in modern frontend workflows.</p>
-                    <div class="card-footer"><button class="btn-text">More Info</button></div>
+                <article class="feature-card">
+                    <div class="card-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=600" alt="Creative Design">
+                    </div>
+                    <div class="card-body">
+                        <h3>Generative Designer</h3>
+                        <p>Integrate AI workflows into high-end UI/UX and visual brand development processes.</p>
+                        <a href="#" class="read-more">View Details →</a>
+                    </div>
+                </article>
+
+                <article class="feature-card">
+                    <div class="card-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=600" alt="Engineering">
+                    </div>
+                    <div class="card-body">
+                        <h3>Frontend Systems</h3>
+                        <p>Develop responsive, AI-powered interfaces using modern frameworks and co-pilot workflows.</p>
+                        <a href="#" class="read-more">View Details →</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="benefits-section" id="benefits">
+            <div class="benefits-container">
+                <div class="benefits-info">
+                    <h2 class="section-title">Bridging the Skill Gap</h2>
+                    <p>We focus on the tools and workflows that companies are actually using today.</p>
+                </div>
+                
+                <div class="benefits-grid">
+                    <div class="info-block">
+                        <div class="block-number">01</div>
+                        <h4>Industry Workflows</h4>
+                        <p>Learn the actual stack used by leading tech firms in 2025.</p>
+                    </div>
+                    <div class="info-block">
+                        <div class="block-number">02</div>
+                        <h4>AI Implementation</h4>
+                        <p>Every role includes training on relevant AI productivity tools.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="section alt-bg" id="why">
-            <h2 class="section-label reveal">Why Internships Matter Today</h2>
-            <p class="section-desc reveal">AI is changing how work is done across every field. Job roles are evolving, and skills required today keep changing.</p>
-            
-            <div class="benefits-grid">
-                <div class="benefit-card reveal">
-                    <div class="icon-num">01</div>
-                    <h4>Career Role Clarity</h4>
-                    <p>Understand what a job role actually looks like today: daily work, responsibilities, and expectations.</p>
-                </div>
-
-                <div class="benefit-card reveal">
-                    <div class="icon-num">02</div>
-                    <h4>Skill Gap Awareness</h4>
-                    <p>Identify what skills you already have and what you need to improve with clear direction.</p>
-                </div>
-
-                <div class="benefit-card reveal">
-                    <div class="icon-num">03</div>
-                    <h4>Proof of Strength</h4>
-                    <p>In a world where anyone can claim skills, projects completed show what you can actually do.</p>
-                </div>
-
-                <div class="benefit-card reveal">
-                    <div class="icon-num">04</div>
-                    <h4>Improved Employability</h4>
-                    <p>Employers prefer people who have worked on real tasks. Students with experience are ~12.6% more likely to get interviews.</p>
-                </div>
-            </div>
-        </section>
     </main>
 
-    <footer class="footer">
-        <div class="footer-glow"></div>
-        <div class="footer-content">
-            <h2>Real Work Builds Real Careers.</h2>
-            <p class="fee-note">A ₹1/day (₹365/year) commitment fee is required to join Satic and participate.</p>
-            <div class="footer-line"></div>
-            <div class="footer-bottom">
-                <p>© Manmeet 2026 SATIC — ALL RIGHTS RESERVED.</p>
-                <div class="footer-links">
-                    <a href="#">Privacy Policy</a>
-                    
-                    <a href="#">Terms of Use</a>
-                </div>
-            </div>
-        </div>
+    <footer class="main-footer">
+        <p>&copy; 2025 SATIC AI. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        const mobileMenu = document.querySelector('#mobileMenu');
+        const navMenu = document.querySelector('#navMenu');
+
+        mobileMenu.addEventListener('click', () => {
+            mobileMenu.classList.toggle('is-active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu on link click
+        document.querySelectorAll('.nav-item').forEach(n => n.addEventListener('click', () => {
+            mobileMenu.classList.remove('is-active');
+            navMenu.classList.remove('active');
+        }));
+    </script>
+
 </body>
 </html>
