@@ -238,3 +238,9 @@ button:disabled,
 html {
   scroll-behavior: smooth;
 }
+/* ===== FIX ANCHOR SCROLL TO FOOTER ===== */
+
+#about,
+#contact {
+  scroll-margin-top: 140px; /* MUST be >= navbar height */
+}
