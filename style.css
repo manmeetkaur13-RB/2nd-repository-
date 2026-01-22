@@ -234,3 +234,7 @@ button:disabled,
     flex-direction: column;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
