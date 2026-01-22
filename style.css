@@ -858,3 +858,21 @@ section p {
   .task-section .section-title {
     font-size: 2rem;
   }
+/* Mobile menu text color fix */
+.nav-links li a {
+  color: #ffffff; /* white text */
+  font-weight: 600;
+}
+
+/* On hover */
+.nav-links li a:hover {
+  color: #8b5cf6; /* purple accent (matches your buttons) */
+}
+  /* Mobile menu background */
+.nav-links {
+  background: rgba(15, 17, 26, 0.95);
+}
+  
+  .nav-links li a.active {
+  color: #8b5cf6;
+  }
