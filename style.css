@@ -87,3 +87,15 @@ body {
     .hamburger { display: flex; flex-direction: column; gap: 5px; cursor: pointer; }
     .hamburger span { width: 25px; height: 2px; background: white; }
 }
+/* Initial state: hidden and slightly lower */
+.glass-card, .section-title, .info-box {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+/* State when scrolled into view */
+.active-reveal {
+    opacity: 1;
+    transform: translateY(0) !important;
+}
