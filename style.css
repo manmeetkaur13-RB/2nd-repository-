@@ -153,16 +153,51 @@ button:disabled,
   background-color: #b0b0b0;
   cursor: not-allowed;
 }
-/* ===== NAVIGATION BAR (DARK BACKGROUND, WHITE TEXT) ===== */
 
-nav {
-  background-color: #111; /* dark background */
+/* ===== FORCE NAVIGATION BAR STYLES ===== */
+
+nav,
+.navbar,
+header nav {
+  background-color: #111 !important;
 }
 
-nav ul li a {
-  color: #fff; /* white text */
+nav a,
+nav ul li a,
+.navbar a,
+header nav a {
+  color: #ffffff !important;
+  text-decoration: none;
 }
 
-nav ul li a:hover {
-  color: #00bfff; /* light blue on hover */
+nav a:hover,
+nav ul li a:hover,
+.navbar a:hover,
+header nav a:hover {
+  color: #00bfff !important;
+}
+
+/* ===== FORCE BUTTON STYLES ===== */
+
+button,
+input[type="button"],
+input[type="submit"],
+.btn {
+  background-color: #222 !important;
+  color: #ffffff !important;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+.btn:hover {
+  background-color: #000 !important;
+}
+
+button:disabled,
+.btn:disabled {
+  background-color: #555 !important;
+  color: #ccc !important;
 }
