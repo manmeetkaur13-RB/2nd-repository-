@@ -914,3 +914,11 @@ section p {
     color: #8b5cf6 !important;
   }
 }
+
+/* ===============================
+   GLOBAL OVERFLOW FIX
+================================ */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
