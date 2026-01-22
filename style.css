@@ -153,4 +153,16 @@ button:disabled,
   background-color: #b0b0b0;
   cursor: not-allowed;
 }
+/* ===== NAVIGATION BAR (DARK BACKGROUND, WHITE TEXT) ===== */
 
+nav {
+  background-color: #111; /* dark background */
+}
+
+nav ul li a {
+  color: #fff; /* white text */
+}
+
+nav ul li a:hover {
+  color: #00bfff; /* light blue on hover */
+}
