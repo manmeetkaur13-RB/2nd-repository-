@@ -754,3 +754,107 @@ section h2 {
 section p {
   color: #c9ccff !important;
 }
+
+/* ---------------------------- */
+/* Internship Task Section Style */
+/* ---------------------------- */
+
+.task-section {
+  padding: 80px 20px;
+  background: #f8fafc;
+}
+
+.task-section .section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.task-section .section-title::after {
+  content: "";
+  width: 90px;
+  height: 4px;
+  background: linear-gradient(90deg, #3b82f6, #06b6d4);
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 4px;
+}
+
+.task-cards {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.task-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 30px 25px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.task-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.15);
+}
+
+.task-card .badge {
+  display: inline-block;
+  background: linear-gradient(45deg, #3b82f6, #06b6d4);
+  color: #fff;
+  font-weight: 800;
+  padding: 6px 15px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.task-card h3 {
+  font-size: 1.65rem;
+  margin-top: 15px;
+  color: #111827;
+  font-weight: 700;
+}
+
+.task-card p {
+  color: #374151;
+  margin: 14px 0;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.task-card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.task-card ul li {
+  margin: 8px 0;
+  position: relative;
+  padding-left: 20px;
+  color: #374151;
+  font-size: 0.95rem;
+}
+
+.task-card ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #06b6d4;
+}
+
+@media (max-width: 768px) {
+  .task-section .section-title {
+    font-size: 2rem;
+  }
