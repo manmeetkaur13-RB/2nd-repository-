@@ -1,22 +1,28 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Mobile Menu Toggle
+    // 1. Hamburger Menu Logic
     const hamburger = document.getElementById('hamburger');
     const navLinks = document.getElementById('navLinks');
 
     hamburger.addEventListener('click', () => {
-        navLinks.classList.toggle('active-nav');
-        // If using CSS to hide/show, toggle a class.
-        navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        navLinks.classList.toggle('mobile-active');
+        // Extra logic to show menu
+        if(navLinks.classList.contains('mobile-active')) {
+            navLinks.style.display = 'flex';
+        } else {
+            navLinks.style.display = 'none';
+        }
     });
 
-    // 2. Reveal on Scroll
+    // 2. High-Performance Reveal on Scroll
+    const observerOptions = { threshold: 0.15 };
+    
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('active');
             }
         });
-    }, { threshold: 0.1 });
+    }, observerOptions);
 
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 });
