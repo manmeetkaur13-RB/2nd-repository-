@@ -258,3 +258,35 @@ html, body {
   height: auto !important;
   overflow: visible !important;
 }
+.footer-nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin: 20px 0 40px;
+}
+
+.footer-nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-nav-links a:hover {
+  color: var(--accent); /* same hover as navbar */
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* offset for fixed navbar so sections are not hidden behind it */
+#home,
+#roles,
+#why,
+#about,
+#contact {
+  scroll-margin-top: 120px; /* match your navbar height */
+}
