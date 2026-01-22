@@ -1,124 +1,43 @@
-/* ================================
-   GLOBAL HELPERS
-================================ */
+// Toggle Hamburger Menu for Mobile
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
 
-// Smooth scroll for internal links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute("href"))?.scrollIntoView({
-      behavior: "smooth"
-    });
-  });
-});
-
-/* ================================
-   DAY 11 – Navbar & Header Effects
-================================ */
-
-// Sticky header shadow on scroll
-const header = document.querySelector("header");
-
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 20) {
-    header.classList.add("header-scrolled");
-  } else {
-    header.classList.remove("header-scrolled");
-  }
-});
-
-/* ================================
-   DAY 12 – Section Reveal on Scroll
-================================ */
-
-const revealElements = document.querySelectorAll(
-  ".hero-content, .role-card, .benefit-item, .task-card"
-);
-
-const revealOnScroll = () => {
-  revealElements.forEach(el => {
-    const elementTop = el.getBoundingClientRect().top;
-    const triggerPoint = window.innerHeight - 100;
-
-    if (elementTop < triggerPoint) {
-      el.classList.add("reveal-active");
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    // Simple toggle logic for mobile visibility
+    if(navLinks.style.display === "flex") {
+        navLinks.style.display = "none";
+    } else {
+        navLinks.style.display = "flex";
+        navLinks.style.flexDirection = "column";
+        navLinks.style.position = "absolute";
+        navLinks.style.top = "70px";
+        navLinks.style.left = "0";
+        navLinks.style.width = "100%";
+        navLinks.style.background = "#05050a";
+        navLinks.style.padding = "20px";
     }
-  });
-};
-
-window.addEventListener("scroll", revealOnScroll);
-window.addEventListener("load", revealOnScroll);
-
-/* ================================
-   DAY 13 – Hover Micro-interactions
-================================ */
-
-document.querySelectorAll(".btn-primary").forEach(btn => {
-  btn.addEventListener("mouseenter", () => {
-    btn.style.transform = "scale(1.05)";
-  });
-
-  btn.addEventListener("mouseleave", () => {
-    btn.style.transform = "scale(1)";
-  });
 });
 
-/* ================================
-   DAY 14 – Task Card Interaction
-================================ */
+// 3D Tilt Effect for Glass Cards
+const cards = document.querySelectorAll('.glass-card');
 
-document.querySelectorAll(".task-card").forEach(card => {
-  card.addEventListener("mouseenter", () => {
-    card.classList.add("task-active");
-  });
-
-  card.addEventListener("mouseleave", () => {
-    card.classList.remove("task-active");
-  });
-});
-
-/* ================================
-   DAY 15 – Progress Highlight
-================================ */
-
-// Highlight task section when visible
-const taskSection = document.querySelector(".task-section");
-
-const observeTasks = new IntersectionObserver(
-  entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        taskSection.classList.add("tasks-visible");
-      }
+cards.forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        
+        const rotateX = (y - centerY) / 10;
+        const rotateY = (centerX - x) / 10;
+        
+        card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
     });
-  },
-  { threshold: 0.3 }
-);
-
-if (taskSection) {
-  observeTasks.observe(taskSection);
-}
-
-/* ================================
-   MOBILE NAV (Already used by you)
-================================ */
-
-const hamburger = document.getElementById("hamburger");
-const navLinks = document.getElementById("nav-links");
-
-hamburger?.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
-  hamburger.classList.toggle("toggle");
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-  const hamburger = document.getElementById("hamburger");
-  const navLinks = document.getElementById("nav-links");
-
-  if (hamburger && navLinks) {
-    hamburger.addEventListener("click", () => {
-      navLinks.classList.toggle("active");
-      hamburger.classList.toggle("toggle");
+    
+    card.addEventListener('mouseleave', () => {
+        card.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg)`;
     });
-  }
 });
