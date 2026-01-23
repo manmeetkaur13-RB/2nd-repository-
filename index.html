@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Satic AI Internships | BBA & BCA 2026</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Plus+Jakarta+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -20,93 +20,111 @@
 
         <ul id="nav-links">
             <li><a href="#home">Home</a></li>
-            <li><a href="#job-roles">Job Roles</a></li>
+            <li><a href="#job-roles">Roles</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#apply-section" class="nav-btn">Apply Now</a></li>
         </ul>
     </nav>
 
     <header id="home">
+        <div class="hero-glow"></div>
         <div class="hero-content">
-            <h1>BBA / BCA Internships 2026</h1>
-            <p>Experience real, AI-powered job roles and build proof through work.</p>
-            <div class="stat-badge">
-                Research shows students with internship experience are <strong>~12.6% more likely</strong> to get job interviews.
+            <span class="badge">BBA / BCA Internships 2026</span>
+            <h1>Real Work Builds<br><span class="gradient-text">Real Careers</span></h1>
+            <p>Bridge the gap between theory and industry with AI-powered practical roles. Experience what a job role actually looks like today.</p>
+            
+            <div class="stat-container">
+                <div class="stat-box">
+                    <strong>~12.6%</strong>
+                    <span>Higher Interview Chance</span>
+                </div>
             </div>
         </div>
     </header>
 
-    <section id="job-roles" class="job-roles-container">
+    <section id="job-roles" class="section-container">
         <h2 class="section-title">Practical Job Roles</h2>
-        
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800" alt="Data Analyst">
-            <h3>AI Data Analyst</h3>
-            <p>Work with real datasets and reports, using AI to support analysis and insight generation.</p>
-        </div>
-
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?auto=format&fit=crop&q=80&w=800" alt="Graphic Designer">
-            <h3>AI Graphic Designer</h3>
-            <p>Create real visual assets and designs while learning how AI supports creative execution.</p>
-        </div>
-
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800" alt="Frontend Developer">
-            <h3>AI Frontend Developer</h3>
-            <p>Build real user interfaces and components while using AI in modern frontend workflows.</p>
+        <div class="roles-grid">
+            <div class="role-card">
+                <div class="card-img analyst-img"></div>
+                <div class="card-body">
+                    <h3>AI Data Analyst</h3>
+                    <p>Work with real datasets and reports, using AI to support analysis and insight generation.</p>
+                </div>
+            </div>
+            <div class="role-card">
+                <div class="card-img design-img"></div>
+                <div class="card-body">
+                    <h3>AI Graphic Designer</h3>
+                    <p>Create real visual assets and designs while learning how AI supports creative execution.</p>
+                </div>
+            </div>
+            <div class="role-card">
+                <div class="card-img dev-img"></div>
+                <div class="card-body">
+                    <h3>AI Frontend Developer</h3>
+                    <p>Build real user interfaces and components while using AI in modern frontend workflows.</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="apply-section" class="form-section">
-        <div class="form-container">
-            <h2>Apply Now</h2>
-            <form action="#" method="POST">
-                <div class="input-row">
+        <div class="form-wrapper">
+            <div class="form-header">
+                <h2>Application Form</h2>
+                <p>Start your professional journey with SVtic AI.</p>
+            </div>
+            <form>
+                <div class="form-row">
                     <input type="text" placeholder="Full Name" required>
                     <input type="email" placeholder="Email Address" required>
                 </div>
-                <div class="input-row">
+                <div class="form-row">
                     <input type="tel" placeholder="Phone Number" required>
-                    <input type="text" placeholder="Current Degree (BCA/BBA)" required>
+                    <select required>
+                        <option value="" disabled selected>Select Degree</option>
+                        <option value="BBA">BBA</option>
+                        <option value="BCA">BCA</option>
+                    </select>
                 </div>
-                <textarea rows="4" placeholder="Why are you interested in this program?" required></textarea>
-                <button type="submit" class="btn-submit">Submit Application</button>
+                <textarea rows="4" placeholder="Why do you want to join this internship?" required></textarea>
+                <button type="submit" class="submit-btn">Submit Application</button>
             </form>
         </div>
     </section>
 
-    <footer class="site-footer">
+    <footer>
         <div class="footer-container">
-            <div class="footer-group brand-info">
+            <div class="footer-column">
                 <div class="logo">Satic<span>Ai</span></div>
                 <p class="tagline">Real Work Builds Real Careers.</p>
-                <p class="fee-note">A ₹1/day (₹365/year) commitment fee is required to join Satic and participate in internships.</p>
+                <p class="fee-badge">₹1/Day (₹365/Year) Fee</p>
             </div>
 
-            <div id="about" class="footer-group">
-                <h4>About Satic</h4>
-                <p>We bridge the gap between theory and the real world for BBA/BCA students through AI-driven practical execution.</p>
+            <div id="about" class="footer-column">
+                <h4>About SVtic</h4>
+                <p>We empower BBA and BCA students by providing practical execution experience in a market where knowledge alone is no longer enough.</p>
             </div>
 
-            <div class="footer-group">
-                <h4>Quick Links</h4>
+            <div class="footer-column">
+                <h4>Explore</h4>
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#job-roles">Job Roles</a></li>
-                    <li><a href="#apply-section">Apply Now</a></li>
+                    <li><a href="#apply-section">Apply</a></li>
                 </ul>
             </div>
 
-            <div class="footer-group">
+            <div class="footer-column">
                 <h4>Contact Us</h4>
-                <p>Email: saticfrontend@gmail.com</p>
-                <p>Mode: Online Program</p>
+                <p>Email: <strong>saticfrontend@gmail.com</strong></p>
+                <p>Status: <strong>Online / Remote</strong></p>
             </div>
         </div>
         <div class="footer-bottom">
             <p>© Manmeet 2026 Satic AI. All rights reserved.</p>
-          <p> Terms of Conditions Privacy policy </p>
+            <p> ——— Terms of Conditions  Privacy Policy ———</p>
         </div>
     </footer>
 
