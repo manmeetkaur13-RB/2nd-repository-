@@ -1,50 +1,60 @@
-// ===== Smooth Scroll for Navbar Links =====
-document.querySelectorAll('a[href^="#"]').forEach(link => {
-  link.addEventListener('click', function (e) {
-    e.preventDefault();
+// 1. HAMBURGER MENU TOGGLE
+function toggleMenu() {
+    const navLinks = document.getElementById('nav-links');
+    const hamburger = document.getElementById('hamburger');
+    
+    // Toggle the 'active' class to show/hide menu
+    navLinks.classList.toggle('active');
+    
+    // Optional: Toggle a class on the hamburger for an 'X' animation
+    hamburger.classList.toggle('open');
+}
 
-    const targetId = this.getAttribute('href');
-    const targetSection = document.querySelector(targetId);
-
-    if (targetSection) {
-      targetSection.scrollIntoView({
-        behavior: 'smooth'
-      });
-    }
-  });
+// 2. CLOSE MENU ON LINK CLICK (For Mobile)
+document.querySelectorAll('#nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        const navLinks = document.getElementById('nav-links');
+        const hamburger = document.getElementById('hamburger');
+        if(navLinks.classList.contains('active')) {
+            navLinks.classList.remove('active');
+            hamburger.classList.remove('open');
+        }
+    });
 });
-  <script>
-    function toggleMenu() {
-        const menu = document.getElementById('nav-links');
-        const hamburger = document.querySelector('.hamburger');
-        menu.classList.toggle('active');
-        hamburger.classList.toggle('active');
-    }
 
-    // This closes the menu automatically when you click a link
-    document.querySelectorAll('#nav-links a').forEach(link => {
-        link.addEventListener('click', () => {
-            document.getElementById('nav-links').classList.remove('active');
-            document.querySelector('.hamburger').classList.remove('active');
+// 3. SMOOTH SCROLLING FOR NAVIGATION
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
         });
     });
-  </script>
+});
 
+// 4. FORM SUBMISSION HANDLER
+const applyForm = document.querySelector('form');
 
-// ===== Simple Scroll Reveal Animation =====
-const sections = document.querySelectorAll("section");
+if (applyForm) {
+    applyForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Get the submit button to show loading state
+        const btn = document.querySelector('.submit-btn');
+        const originalText = btn.innerText;
+        
+        btn.innerText = "Sending...";
+        btn.style.opacity = "0.7";
+        btn.disabled = true;
 
-const revealOnScroll = () => {
-  const windowHeight = window.innerHeight;
-
-  sections.forEach(section => {
-    const sectionTop = section.getBoundingClientRect().top;
-
-    if (sectionTop < windowHeight - 100) {
-      section.classList.add("show");
-    }
-  });
-};
-
-window.addEventListener("scroll", revealOnScroll);
-revealOnScroll();
+        // Simulate a network delay (1.5 seconds)
+        setTimeout(() => {
+            alert("Thank you for applying to SVtic AI! We will review your application and contact you soon.");
+            
+            // Reset form
+            applyForm.reset();
+            btn.innerText = originalText;
+            btn.style.opacity = "1";
+            btn.disabled = false;
+        }, 1500);
+      
