@@ -1,156 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SATIC AI</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satic AI Internships | BBA & BCA 2026</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Plus+Jakarta+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- ========== NAVIGATION ========== -->
-  <nav>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#job-roles">Job Roles</a></li>
-      <li><a href="#why-satic">Why Satic</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#apply-section">Apply Now</a></li>
-    </ul>
-  </nav>
+    <nav>
+        <div class="logo">Satic<span>TM</span></div>
+        
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
 
-  <!-- ========== HERO ========== -->
-  <section id="home">
-    <h1>BBA / BCA Internships 2026</h1>
-    <p>Experience Real, AI-Powered Job Roles</p>
-  </section>
+        <ul id="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#job-roles">Job Roles</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#apply-section" class="nav-btn">Apply Now</a></li>
+        </ul>
+    </nav>
+
+    <header id="home">
+        <div class="hero-content">
+            <h1>BBA / BCA Internships 2026</h1>
+            <p>Experience real, AI-powered job roles and build proof through work.</p>
+            <div class="stat-badge">
+                Research shows students with internship experience are <strong>~12.6% more likely</strong> to get job interviews.
+            </div>
+        </div>
+    </header>
 
     <section id="job-roles" class="job-roles-container">
-    <h2 style="text-align: center; width: 100%; grid-column: 1 / -1;">Practical Job Roles</h2>
-    
-    <div class="card">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAra-SrzmUr9ZFhp6VX-9pwxWTYWb6Dd19UQ&s" alt="AI Data">
-      <h3>AI Data Analyst</h3>
-      <p>Work with real datasets and reports, using AI to support analysis and insight generation.</p>
-    </div>
+        <h2 class="section-title">Practical Job Roles</h2>
+        
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800" alt="Data Analyst">
+            <h3>AI Data Analyst</h3>
+            <p>Work with real datasets and reports, using AI to support analysis and insight generation.</p>
+        </div>
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?auto=format&fit=crop&q=80&w=800" alt="AI Design">
-      <h3>AI Graphic Designer</h3>
-      <p>Create real visual assets and designs while learning how AI supports creative execution.</p>
-    </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?auto=format&fit=crop&q=80&w=800" alt="Graphic Designer">
+            <h3>AI Graphic Designer</h3>
+            <p>Create real visual assets and designs while learning how AI supports creative execution.</p>
+        </div>
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800" alt="AI Dev">
-      <h3>AI Frontend Developer</h3>
-      <p>Build real user interfaces and components while using AI in modern frontend workflows.</p>
-    </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800" alt="Frontend Developer">
+            <h3>AI Frontend Developer</h3>
+            <p>Build real user interfaces and components while using AI in modern frontend workflows.</p>
+        </div>
     </section>
-  
 
-  <!-- ========== JOB ROLES ========== -->
-  <section id="job-roles">
-    <h2>Practical Job Roles</h2>
-    <div>
-      <h3>AI Data Analyst</h3>
-      <p>Work with real datasets and reports, using AI to support analysis and insight generation.</p>
+    <section id="apply-section" class="form-section">
+        <div class="form-container">
+            <h2>Apply Now</h2>
+            <form action="#" method="POST">
+                <div class="input-row">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+                <div class="input-row">
+                    <input type="tel" placeholder="Phone Number" required>
+                    <input type="text" placeholder="Current Degree (BCA/BBA)" required>
+                </div>
+                <textarea rows="4" placeholder="Why are you interested in this program?" required></textarea>
+                <button type="submit" class="btn-submit">Submit Application</button>
+            </form>
+        </div>
+    </section>
 
-      <h3>AI Graphic Designer</h3>
-      <p>Create real visual assets and designs while learning how AI supports creative execution.</p>
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-group brand-info">
+                <div class="logo">Satic<span>TM</span></div>
+                <p class="tagline">Real Work Builds Real Careers.</p>
+                <p class="fee-note">A ₹1/day (₹365/year) commitment fee is required to join Satic and participate in internships.</p>
+            </div>
 
-      <h3>AI Frontend Developer</h3>
-      <p>Build real user interfaces and components while using AI in modern frontend workflows.</p>
-    </div>
-  </section>
+            <div id="about" class="footer-group">
+                <h4>About Satic</h4>
+                <p>We bridge the gap between theory and the real world for BBA/BCA students through AI-driven practical execution.</p>
+            </div>
 
-  <!-- ========== WHY INTERNSHIPS MATTER TODAY ========== -->
-  <section id="why-internships">
-    <h2>Why Internships Matter Today</h2>
-    <p>AI is changing how work is done across every field. Job roles are evolving, and skills required today keep changing.</p>
-    <ol>
-      <li><strong>Career Role Clarity</strong> – Understand what a job role looks like today.</li>
-      <li><strong>Skill Gap Awareness</strong> – Identify what skills you already have and what you need to improve.</li>
-      <li><strong>Proof of Strength</strong> – Projects completed show what you can actually do.</li>
-      <li><strong>Improved Employability</strong> – Real experience makes you more attractive to employers.</li>
-    </ol>
-  </section>
+            <div class="footer-group">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#job-roles">Job Roles</a></li>
+                    <li><a href="#apply-section">Apply Now</a></li>
+                </ul>
+            </div>
 
-  <!-- ======= NEW CONTENT ADDED HERE ======= -->
-  <section id="internship-benefits">
-    <h2>The Real Benefits of Internships in 2026</h2>
-    <p>Internships are no longer optional — they are key to gaining real skills, confidence, and professional network connections.</p>
-    <ul>
-      <li><strong>Hands-On Experience:</strong> Apply what you learn in a real work environment.</li>
-      <li><strong>Professional Growth:</strong> Learn workplace communication and collaboration.</li>
-      <li><strong>Portfolio Building:</strong> Add real work samples to show future employers.</li>
-      <li><strong>Mentorship:</strong> Get guidance from experienced professionals.</li>
-    </ul>
-    <p>Whether you’re just starting or looking to level up your expertise, internships help bridge the gap between theory and real world work.</p>
-  </section>
+            <div class="footer-group">
+                <h4>Contact Us</h4>
+                <p>Email: saticfrontend@gmail.com</p>
+                <p>Mode: Online Program</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© Manmeet 2026 Satic AI. All rights reserved.</p>
+          <p> Terms of Conditions Privacy policy </p>
+        </div>
+    </footer>
 
-  <!-- ========== APPLY NOW FORM ========== -->
-  <section id="apply-section">
-    <h2>Apply Now</h2>
-    <form action="https://example.com/submit" method="POST">
-
-      <label for="full-name">Full Name</label><br />
-      <input type="text" id="full-name" name="fullName" placeholder="Your full name" required /><br />
-
-      <label for="email">Email Address</label><br />
-      <input type="email" id="email" name="email" placeholder="yourname@example.com" required /><br />
-
-      <label for="phone">Phone Number</label><br />
-      <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required /><br />
-
-      <label for="degree">Current Degree / Course</label><br />
-      <input type="text" id="degree" name="degree" placeholder="E.g., BCA / BBA" required /><br />
-
-      <label for="linkedIn">LinkedIn Profile (optional)</label><br />
-      <input type="url" id="linkedIn" name="linkedIn" placeholder="https://linkedin.com/in/yourprofile" /><br />
-
-      <label for="message">Why are you interested in this program?</label><br />
-      <textarea id="message" name="message" rows="4" placeholder="Tell us about yourself..." required></textarea><br />
-
-      <button type="submit">Submit Application</button>
-
-    </form>
-  </section>
-
-  <!-- ========== FOOTER ========== -->
-  <footer class="site-footer">
-  <div class="footer-content">
-
-    <div class="footer-brand">
-      <h3>SATIC</h3>
-      <p><strong>Real Work Builds Real Careers.</strong></p>
-      <p>
-        ₹1/day (₹365/year) commitment fee is required to join Satic and participate
-        in real-world internship programs.
-      </p>
-    </div>
-
-    <div class="footer-links">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Terms & Conditions</a></li>
-      </ul>
-    </div>
-
-    <div class="footer-contact">
-      <h4>Contact</h4>
-      <p>Email: saticfrontend@gmail.com</p>
-      <p>Mode: Online Internship Program</p>
-    </div>
-
-  </div>
-
-  <div class="footer-bottom">
-    <p>© Manmeet 2026 SATIC. All rights reserved.</p>
-  </div>
-  </footer>
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('nav-links');
+            const hamburger = document.getElementById('hamburger');
+            nav.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        }
+    </script>
 </body>
-    </html>
+</html>
