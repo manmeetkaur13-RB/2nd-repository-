@@ -13,6 +13,22 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
     }
   });
 });
+  <script>
+    function toggleMenu() {
+        const menu = document.getElementById('nav-links');
+        const hamburger = document.querySelector('.hamburger');
+        menu.classList.toggle('active');
+        hamburger.classList.toggle('active');
+    }
+
+    // This closes the menu automatically when you click a link
+    document.querySelectorAll('#nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            document.getElementById('nav-links').classList.remove('active');
+            document.querySelector('.hamburger').classList.remove('active');
+        });
+    });
+  </script>
 
 
 // ===== Simple Scroll Reveal Animation =====
